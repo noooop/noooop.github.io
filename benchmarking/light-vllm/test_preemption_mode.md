@@ -128,3 +128,24 @@ preemption_mode:  recomputation
 - Throughput: 4.1691 requests/s, 4269.1538 tokens/s, Delay 28.9987 ms, n_step: 8366
 - Throughput: 2.4327 requests/s, 2491.0423 tokens/s, Delay 25.2696 ms, n_step: 16348
 - Throughput: 1.6128 requests/s, 1651.5437 tokens/s, Delay 19.2043 ms, n_step: 32313
+
+# vllm 0.5.4 + decode first fix
+preemption_mode:  swap
+- Throughput: 3.3961 requests/s, 3477.6048 tokens/s, Delay 34.7869 ms, n_step: 9370
+- Throughput: 4.3051 requests/s, 4408.4532 tokens/s, Delay 39.6843 ms, n_step: 6452
+- Throughput: 5.0203 requests/s, 5140.7446 tokens/s, Delay 43.3090 ms, n_step: 5031
+- Throughput: 5.2410 requests/s, 5366.7921 tokens/s, Delay 43.4836 ms, n_step: 4654
+- Throughput: 5.6498 requests/s, 5785.4224 tokens/s, Delay 41.0645 ms, n_step: 4455
+- Throughput: 4.1687 requests/s, 4268.7136 tokens/s, Delay 29.0035 ms, n_step: 8366
+- Throughput: 2.4294 requests/s, 2487.7114 tokens/s, Delay 25.3038 ms, n_step: 16348
+- Throughput: 1.6106 requests/s, 1649.2973 tokens/s, Delay 19.2306 ms, n_step: 32313
+
+preemption_mode:  recomputation
+- Throughput: 3.1604 requests/s, 3236.2469 tokens/s, Delay 39.2707 ms, n_step: 9467
+- Throughput: 4.0087 requests/s, 4104.9221 tokens/s, Delay 43.5610 ms, n_step: 6710
+- Throughput: 4.7009 requests/s, 4813.6819 tokens/s, Delay 45.2873 ms, n_step: 5309
+- Throughput: 4.9642 requests/s, 5083.3149 tokens/s, Delay 44.6937 ms, n_step: 5000
+- Throughput: 5.5844 requests/s, 5718.4006 tokens/s, Delay 41.0869 ms, n_step: 4512
+- Throughput: 4.1611 requests/s, 4260.9301 tokens/s, Delay 29.0527 ms, n_step: 8366
+- Throughput: 2.4299 requests/s, 2488.2166 tokens/s, Delay 25.2985 ms, n_step: 16348
+- Throughput: 1.6109 requests/s, 1649.5167 tokens/s, Delay 19.2280 ms, n_step: 32313
